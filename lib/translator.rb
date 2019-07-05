@@ -13,12 +13,15 @@ def load_library(file)
     end
     
     meaning.each do |eng, jap|
-      emoticons["get_meaning"][jap] = meaning
-      emoticons["get_emoticon"]
+      if !emoticons["get_meaning"][jap] 
+        emoticons["get_meaning"][jap] = meaning
+      end
+      if !emoticons["get_emoticon"][eng]
+        emoticons["get_emoticon"][eng] = jap
+      end
+    end
+  end
       
-      
-    
-    
   return emoticons
 
 end
