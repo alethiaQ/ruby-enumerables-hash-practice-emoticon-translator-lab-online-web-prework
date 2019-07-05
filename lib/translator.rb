@@ -13,6 +13,7 @@ def load_library(file)
     end
     emoticons["get_meaning"] += meaning
     meaning.each do |eng, jap|
+      emoticons["get_meaning"][meaning]
       
       
     
