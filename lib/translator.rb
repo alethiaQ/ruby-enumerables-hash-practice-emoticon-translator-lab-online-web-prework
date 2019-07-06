@@ -9,7 +9,7 @@ def load_library(file)
   }
   emoticons.each do |meaning, emot|
     emot_hash["get_meaning"][emot[0]] = emoticons[meaning][1]
-    emot_hash["get_emoticon"][emot[0]]= meaning
+    emot_hash["get_emoticon"][emot[1]]= meaning
   end
     emot_hash
 end
