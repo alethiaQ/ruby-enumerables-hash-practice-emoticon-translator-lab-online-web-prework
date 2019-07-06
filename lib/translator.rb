@@ -3,15 +3,11 @@ require 'yaml'
 
 def load_library(file)
   
-  emoticons = YAML.load_file(file_path)
+  emoticons = YAML.load_file(file)
   
   emoticons.each do |meaning|
     meaning.each do |eng, jap|
-      if !emoticons["get_meaning"]
-      emoticons["get_meaning"] = {}
-    end
-      if !emoticons["get_emoticon"] 
-      emoticons["get_emoticon"] = {}
+    
     end
       if !emoticons["get_meaning"][jap] 
         emoticons["get_meaning"][jap] = meaning
