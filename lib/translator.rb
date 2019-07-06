@@ -19,6 +19,7 @@ def load_library(file)
         emoticons["get_emoticon"][eng] = jap
       end
     end
+  end
   return emoticons
 
 end
