@@ -4,6 +4,7 @@ require 'yaml'
 def load_library(file)
   
   emoticons = YAML.load_file(file)
+  
   emoticons.each do |meaning|
     meaning.each do |eng, jap|
       if !emoticons["get_meaning"]
