@@ -16,7 +16,7 @@ end
 
 
 def get_japanese_emoticon(file, emoji)
-  result = load_library(file)["get_emoticon"][emoji] unless 
+  result = load_library(file)["get_emoticon"][emoji] 
   
     return "I'm sorry, that emoticon is not known"
   end
